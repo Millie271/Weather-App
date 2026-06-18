@@ -1,0 +1,26 @@
+.WeeklyForecast {
+    place-content: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.WeeklyForecast .weekly-header {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.WeeklyForecast .weekly-body p {
+  margin: 0 0 12px 0;
+}
+.weekly-container {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  overflow-x: auto;
+  padding: 16px;
+  background: #2574fca1;
+  border-radius: 6px;
+}

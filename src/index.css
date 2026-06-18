@@ -7,10 +7,33 @@
   font-family: 'Open Sans', sans-serif;
 }
 .App{
+  min-height: 100vh;
+  background-color: #b4b5eb;
+  padding: 24px;
+  gap: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #ffff;
+}
+/* Layout for placing sections side-by-side */
+.layout {
+  display: flex;
+  gap: 24px;
   justify-content: center;
-  height: 100vh;
-  background-color: #b4b5eb;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/* Make both panels a consistent width so they sit nicely side-by-side */
+.Weather,
+.DailyForecast {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+}
+.WeeklyForecast {
+  flex: 1;
+  min-width: 320px;
+  width: 100%;
 }

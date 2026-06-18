@@ -29,10 +29,10 @@ const allIcons = {
   "13n": snowIcon,
 }
 
-const Weather = () => {
+const Weather = ({ weather, setWeather }) => {
   const BASE_URL = "http://localhost:8000";
   const [city, setCity] = useState("");
-  const [weather, setWeather] = useState(null);
+
 
   const getWeather = useCallback(async (city) => {
     if (city === ""){
